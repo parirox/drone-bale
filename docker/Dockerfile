@@ -4,12 +4,12 @@ ARG TARGETOS
 ARG TARGETARCH
 
 LABEL maintainer="Bo-Yi Wu <appleboy.tw@gmail.com>" \
-  org.label-schema.name="Telegram Plugin" \
+  org.label-schema.name="Bale Plugin" \
   org.label-schema.vendor="Bo-Yi Wu" \
   org.label-schema.schema-version="1.0"
 
-LABEL org.opencontainers.image.source=https://github.com/appleboy/drone-telegram
-LABEL org.opencontainers.image.description="plugin for sending telegram notifications"
+LABEL org.opencontainers.image.source=https://github.com/pariroox/drone-bale
+LABEL org.opencontainers.image.description="plugin for sending Bale notifications"
 LABEL org.opencontainers.image.licenses=MIT
 
 RUN apk add --no-cache ca-certificates && \

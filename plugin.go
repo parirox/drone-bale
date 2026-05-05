@@ -312,6 +312,7 @@ func (p *Plugin) Exec() (err error) {
 		}
 	}
 
+	tgbotapi.APIEndpoint = "https://tapi.bale.ai"
 	var bot *tgbotapi.BotAPI
 	if len(p.Config.Socks5) > 0 {
 		var proxyURL *url.URL
